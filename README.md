@@ -1,8 +1,7 @@
-[![Build Status](https://travis-ci.org/yagcil/yagcil-web.svg)](https://travis-ci.org/yagcil/yagcil-web)
 # yagcil-web
-Yet Another Google Code-in Leadeboard.
+[![Build Status](https://travis-ci.org/yagcil/yagcil-web.svg)](https://travis-ci.org/yagcil/yagcil-web)
 
-Web App front-end of YAGCIL.
+Yet Another Google Code-in Leadeboard - web app.
 
 ## Technologies
 * AngularJS
@@ -16,7 +15,7 @@ Web App front-end of YAGCIL.
 ### Requirements
 * [NodeJS and NPM](http://nodejs.org)
 * [bower](http://bower.io)
-* [grunt](http://grunt.io)
+* [grunt-cli](https://github.com/gruntjs/grunt-cli)
 
 Make sure you have all the requirements installed.
 

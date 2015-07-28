@@ -1,4 +1,4 @@
-![travis](https://travis-ci.org/yagcil/yagcil-web.svg?branch=master)
+[![Build Status](https://travis-ci.org/yagcil/yagcil-web.svg)](https://travis-ci.org/yagcil/yagcil-web)
 # yagcil-web
 Yet Another Google Code-in Leadeboard.
 

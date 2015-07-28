@@ -1,7 +1,5 @@
-# yagcil-web
-[![Build Status](https://travis-ci.org/yagcil/yagcil-web.svg)](https://travis-ci.org/yagcil/yagcil-web)
-
-Yet Another Google Code-in Leadeboard - web app.
+# yagcil-web [![Build Status](https://travis-ci.org/yagcil/yagcil-web.svg)](https://travis-ci.org/yagcil/yagcil-we)
+*Yet Another Google Code-in Leadeboard - web app*
 
 ## Technologies
 * AngularJS

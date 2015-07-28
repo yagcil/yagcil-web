@@ -1,0 +1,53 @@
+// Jade main template
+doctype html
+html(lang="en" ng-app="ygApp")
+    head
+        base(href="/")
+        meta(charset="utf-8")
+        meta(name="fragment", content="!")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+
+        link(rel="stylesheet", href="//fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="//fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic")
+        if env == 'prod'
+            link(rel="stylesheet", href="//ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css")
+            link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.7.1/loading-bar.min.css")
+        else
+            link(rel="stylesheet", href="bower_components/angular-material/angular-material.css")
+            link(rel="stylesheet", href="bower_components/angular-loading-bar/build/loading-bar.css")
+
+        link(rel='stylesheet', href='/dist/css/app.css')
+
+        // @TODO: Dynamic page title service
+        title= pageTitle
+    body(ng-controller="AppCtrl")
+        section(layout="row", layout-fill)
+            include ./includes/sidenav.jade
+            md-content(flex)
+                div(ui-view)
+
+        if env == 'prod'
+            // 3rd-part scripts
+            // @TODO: Add all CDN dependecies (production)
+            script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js")
+            script(src="dist/js/site.min.js")
+        else
+            // 3rd-party scripts
+            script(src="bower_components/angular/angular.js")
+            script(src="bower_components/angular-animate/angular-animate.js")
+            script(src="bower_components/angular-aria/angular-aria.js")
+            script(src="bower_components/angular-resource/angular-resource.js")
+            script(src="bower_components/angular-material/angular-material.js")
+            script(src="bower_components/angular-loading-bar/build/loading-bar.js")
+            script(src="bower_components/angular-translate/angular-translate.js")
+            script(src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js")
+            script(src="bower_components/angular-ui-router/release/angular-ui-router.js")
+
+            // App
+            script(src="config/config.dev.js")
+            script(src="app.js")
+            // Controllers
+            script(src="controllers/home.js")
+
+            // Live reload
+            script(src="//localhost:35729/livereload.js")

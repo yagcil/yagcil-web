@@ -1,4 +1,4 @@
-# yagcil-web [![Build Status](https://travis-ci.org/yagcil/yagcil-web.svg)](https://travis-ci.org/yagcil/yagcil-we)
+# yagcil-web [![Build Status](https://travis-ci.org/yagcil/yagcil-web.svg)](https://travis-ci.org/yagcil/yagcil-web)
 *Yet Another Google Code-in Leadeboard - web app*
 
 ## Technologies

@@ -21,6 +21,7 @@ html(lang="en" ng-app="ygApp")
         // @TODO: Dynamic page title service
         title= pageTitle
     body(ng-controller="AppCtrl")
+        include ./includes/header.jade
         section(layout="row", layout-fill)
             include ./includes/sidenav.jade
             md-content(flex)
@@ -48,6 +49,7 @@ html(lang="en" ng-app="ygApp")
             script(src="app.js")
             // Controllers
             script(src="controllers/home.js")
+            script(src="controllers/header.js")
 
             // Live reload
             script(src="//localhost:35729/livereload.js")

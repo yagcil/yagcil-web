@@ -4,7 +4,7 @@
 
 angular.module('ygApp')
     .controller('HeaderCtrl', function ($scope, $mdSidenav, $mdUtil) {
-        $scope.toggleNav = $mdUtil.debounce(function () {
+        $scope.toggleNav = $mdUtil.throttle(function () {
             $mdSidenav('left').toggle();
         }, 200);
     });

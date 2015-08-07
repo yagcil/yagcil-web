@@ -22,6 +22,17 @@ npm install
 npm start
 ```
 
+## Building
+*yagcil-web* uses [Grunt](gruntjs.com) to build its code, 
+there are 2 types of builds: **debug** and **production**.
+You can switch between them in various possible ways:
+```
+grunt build --env=prod
+or
+DEV_PROD_SWITCH=prod grunt build
+```
+**debug** is used by default.
+
 ## License
 Copyright (C) 2015  Michał Proszek and Mateusz Maćkowski
 

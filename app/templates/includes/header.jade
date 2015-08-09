@@ -2,5 +2,4 @@ md-toolbar(ng-controller="HeaderCtrl")
     div.md-toolbar-tools
         md-button.md-icon-button(hide-gt-md ng-click="toggleNav()")
             md-icon menu
-        h2
-            | yagcil
+        h2(ng-bind="viewTitle")

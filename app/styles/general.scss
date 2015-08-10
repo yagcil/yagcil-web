@@ -1,3 +1,18 @@
 @import 'config';
 
-// TODO: Change angular-loading-bard color
+/* Loading progress bar*/
+#loading-bar {
+  .bar {
+    background: $colors-accent;
+  }
+  .peg {
+    -moz-box-shadow: $colors-accent 1px 0 6px 1px;
+    -ms-box-shadow: $colors-accent 1px 0 6px 1px;
+    -webkit-box-shadow: $colors-accent 1px 0 6px 1px;
+    box-shadow: $colors-accent 1px 0 6px 1px;
+  }
+}
+#loading-bar-spinner .spinner-icon {
+  border-top-color: $colors-accent;
+  border-left-color: $colors-accent;
+}

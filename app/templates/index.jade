@@ -24,8 +24,10 @@ html(lang="en" ng-app="ygApp")
         section(layout="row", layout-fill)
             include ./includes/sidenav.jade
             md-content(flex)
-                include ./includes/header.jade
-                div(ui-view)
+                header
+                    include ./includes/header.jade
+                main
+                    div(ui-view)
 
         if env == 'prod'
             // 3rd-part scripts
@@ -34,6 +36,7 @@ html(lang="en" ng-app="ygApp")
             script(src="dist/js/site.min.js")
         else
             // 3rd-party scripts
+            script(src="bower_components/Chart.js/Chart.js")
             script(src="bower_components/angular/angular.js")
             script(src="bower_components/angular-animate/angular-animate.js")
             script(src="bower_components/angular-aria/angular-aria.js")
@@ -43,13 +46,18 @@ html(lang="en" ng-app="ygApp")
             script(src="bower_components/angular-translate/angular-translate.js")
             script(src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js")
             script(src="bower_components/angular-ui-router/release/angular-ui-router.js")
+            script(src="bower_components/tc-angular-chartjs/dist/tc-angular-chartjs.js")
 
             // App
             script(src="config/config.dev.js")
             script(src="app.js")
+            // Services
+            script(src="services/organization.js")
+            script(src="services/orgRank.js")
             // Controllers
             script(src="controllers/home.js")
             script(src="controllers/header.js")
+            script(src="controllers/organization.js")
 
             // Live reload
             script(src="//localhost:35729/livereload.js")

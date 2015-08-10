@@ -1,6 +1,6 @@
 // Jade main template
 doctype html
-html(lang="en" ng-app="ygApp")
+html(lang="en", ng-app="ygApp")
     head
         base(href="/")
         meta(charset="utf-8")
@@ -20,7 +20,7 @@ html(lang="en" ng-app="ygApp")
 
         // @TODO: Dynamic page title service
         title= pageTitle
-    body(ng-controller="AppCtrl")
+    body(layout="column", ng-controller="AppCtrl")
         section(layout="row", layout-fill)
             include ./includes/sidenav.jade
             md-content(flex)

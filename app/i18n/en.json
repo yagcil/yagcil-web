@@ -2,5 +2,14 @@
   "HELLO_WORLD": "Hello World",
   "SIDENAV": {
     "MENU_HEADER": "Menu"
+  },
+  "ORGANIZATION": {
+    "SUBTITLE": "{students} {students, select, 1{student} other{students}} {students, select, 1{has} other{have}} finished {tasks} {tasks, select, 1{task} other{tasks}}",
+    "LIST": {
+      "STUDENT": [
+        "has finished",
+        "{tasks, select, 1{task} other{tasks}}"
+      ]
+    }
   }
 }

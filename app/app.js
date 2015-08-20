@@ -44,6 +44,7 @@ angular.module('ygApp', [
             .determinePreferredLanguage()
             .fallbackLanguage('en')
             .useSanitizeValueStrategy()
+            .useMessageFormatInterpolation();
     })
     .controller('AppCtrl', function ($scope, $rootScope) {
         $rootScope.$on('$stateChangeSuccess', function () {

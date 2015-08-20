@@ -14,6 +14,7 @@ module.exports = function (grunt) {
                     'app/dist/js/site.js': [
                         'app/config/config.prod.js',
                         'app/*.js',
+                        'app/services/*.js',
                         'app/controllers/*.js',
                         'app/directives/*.js',
                         'app/js/main.js'
@@ -51,7 +52,8 @@ module.exports = function (grunt) {
                 },
                 files: {
                     "app/index.html": "app/templates/index.jade",
-                    "app/views/home.html": "app/templates/views/home.jade"
+                    "app/views/home.html": "app/templates/views/home.jade",
+                    "app/views/organization.html": "app/templates/views/organization.jade"
                 }
             }
         },

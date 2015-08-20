@@ -2,7 +2,8 @@
 
 // Declare app level module which depends on views, and components
 angular.module('ygApp', [
-    'ngMaterial', 'ui.router', 'angular-loading-bar',
+    'ngResource', 'ngSanitize',
+    'ngMaterial', 'ui.router', 'angular-loading-bar', 'tc.chartjs',
     'pascalprecht.translate'
 ])
     .config(function ($mdThemingProvider) {
@@ -21,6 +22,11 @@ angular.module('ygApp', [
                 url: '/',
                 templateUrl: 'views/home.html',
                 controller: 'HomeCtrl'
+            })
+            .state('organization', {
+                url: '/organization/:name/:year',
+                templateUrl: 'views/organization.html',
+                controller: 'OrganizationCtrl'
             });
 
         $urlRouterProvider.otherwise('/');

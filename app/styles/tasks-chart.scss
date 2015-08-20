@@ -1,0 +1,72 @@
+@import 'config';
+
+.tasks-chart-wrapper {
+  margin: 1rem 0 0 0;
+}
+
+.tasks-chart {
+  height: 200px;
+
+  @media screen and (max-width: $break-mobile) {
+    height: 100%;
+    width: 50%;
+  }
+}
+
+.tasks-chart-legend {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+
+    li {
+      display: block;
+      float: left;
+      clear: both;
+      padding: 10px 10px 0 10px;
+
+      font-size: 0.9rem;
+
+      vertical-align: middle;
+      line-height: 25px;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      span {
+        width: 25px;
+        height: 25px;
+        display: block;
+        float: left;
+        margin-right: 10px;
+      }
+    }
+
+    @media screen and (max-width: $break-mobile) {
+      margin-top: 0;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+
+      li {
+        display: block;
+        font-size: smaller;
+        line-height: 15px;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
+        span {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}

@@ -8,12 +8,14 @@
     "angular-route": "~1.4.0",
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0",
-    "html5-boilerplate": "~5.2.0",
     "angular-material": "~0.10.0",
     "angular-loading-bar": "~0.8.0",
     "angular-resource": "~1.4.3",
     "angular-translate": "~2.7.2",
     "angular-translate-loader-static-files": "~2.7.2",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "Chart.js": "~1.0.2",
+    "tc-angular-chartjs": "~1.0.12",
+    "angular-sanitize": "~1.4.3"
   }
 }

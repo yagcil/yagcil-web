@@ -1,0 +1,25 @@
+// Organization View
+md-content(layout="column")
+    div.md-padding
+        h1.md-title.truncate.center(ng-hide="loading.rank")
+            // TODO(poxip): Add translation and pluarization
+            | {{ rank.length }} students have finished {{ tasksNum }} tasks
+        md-content.tasks-chart-wrapper(layout-sm="row", layout="column", layout-align="center center")
+            div
+                canvas.tasks-chart(tc-chartjs-pie, chart-data="tasksChart.data", chart-legend="tasksChart")
+            div.tasks-chart-legend(tc-chartjs-legend, chart-legend="tasksChart")
+    md-list(flex)
+        md-divider
+        md-list-item.md-clickable(ng-repeat="student in rank", md-ink-ripple)
+            md-icon person
+            p.truncate
+                strong(ng-bind-html="student.student")
+                |  has finished&nbsp;
+                strong(ng-bind="student.tasks")
+                |  tasks
+            md-icon.right.md-hue-3(
+                aria-label="Check this student's tasks"
+            ) chevron_right
+            md-divider
+    div.loading-spinner(ng-show="loading.any()", layout, layout-align="center center")
+        md-progress-circular.md-accent(md-mode="indeterminate")

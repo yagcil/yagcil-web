@@ -15,7 +15,8 @@ module.exports = function (config) {
             'app/bower_components/angular-ui-router/release/angular-ui-router.js',
             'app/config/config.dev.js',
             'app/*.js',
-            'app/controllers/*.js'
+            'app/controllers/*.js',
+            'tests/**/*.js'
         ],
 
         autoWatch: true,

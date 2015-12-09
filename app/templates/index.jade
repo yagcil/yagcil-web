@@ -32,7 +32,20 @@ html(lang="en", ng-app="ygApp")
         if env == 'prod'
             // 3rd-part scripts
             // @TODO: Add all CDN dependecies (production)
+            script(src="bower_components/Chart.js/Chart.min.js")
             script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js")
+            script(src="bower_components/angular-sanitize/angular-sanitize.min.js")
+            script(src="bower_components/angular-animate/angular-animate.min.js")
+            script(src="bower_components/angular-aria/angular-aria.min.js")
+            script(src="bower_components/angular-resource/angular-resource.min.js")
+            script(src="bower_components/angular-material/angular-material.min.js")
+            script(src="bower_components/angular-loading-bar/build/loading-bar.min.js")
+            script(src="bower_components/angular-translate/angular-translate.min.js")
+            script(src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js")
+            script(src="bower_components/messageformat/messageformat.min.js")
+            script(src="bower_components/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.min.js")
+            script(src="bower_components/angular-ui-router/release/angular-ui-router.min.js")
+            script(src="bower_components/tc-angular-chartjs/dist/tc-angular-chartjs.min.js")
             script(src="dist/js/site.min.js")
         else
             // 3rd-party scripts

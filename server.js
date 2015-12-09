@@ -13,10 +13,5 @@ app.get('*', function (req, res) {
     res.sendFile(__dirname + '/app/index.html');
 });
 
-var host = process.env.OPENSHIFT_NODEJS_IP || 'localhost';
-var port = parseInt(process.env.OPENSHIFT_NODEJS_PORT) || 8000;
-app.listen(port, host, function () {
-    var host = this.address().address;
-    var port = this.address().port;
-    console.log('Server is listening at http://%s:%d', host, port);
-});
+var port = parseInt(process.env.PORT) || 8000;
+app.listen(port);
